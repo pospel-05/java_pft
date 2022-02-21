@@ -9,11 +9,12 @@ public class MyFirstProgram {
     hello( "user");
     hello("Maxim");
 
-    Square s = new Square(5);
-    System.out.print("Площадь квадрата со стороной " + s.l + " = " + s.area());
+    Square square = new Square(5);
+    System.out.println("Площадь квадрата со стороной " + square.l + " = " + square.area());
 
-    Rectangle r = new Rectangle(4,6);
-    System.out.print("Площадь прямоугольника со сторонами " + r.x + " и " + r.y + " = " + r.area());
+    Rectangle rectangle = new Rectangle(4,6);
+    System.out.println("Площадь прямоугольника со сторонами " + rectangle.a + " и " + rectangle.b + " = " + rectangle.area());
+
   }
 
   public static void hello (String sambody) {

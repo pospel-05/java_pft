@@ -2,16 +2,16 @@ package ru.stqa.pft.sandbox;
 
 public class Rectangle {
 
-    public double x;
+    public double a;
 
-    public double y;
+    public double b;
 
-    public Rectangle(double x, double y){
-        this.x = x;
-        this.y = y;
+    public Rectangle(double a, double b){
+        this.a = a;
+        this.b = b;
     }
     public double area () {
-        return this.x * this.y;
+        return this.a * this.b;
     }
 
 
