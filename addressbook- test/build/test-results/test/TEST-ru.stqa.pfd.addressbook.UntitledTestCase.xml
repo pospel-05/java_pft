@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pfd.addressbook.UntitledTestCase" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-20T07:13:21" hostname="HOME-PC" time="2.039">
+  <properties/>
+  <testcase name="testUntitledTestCase" classname="ru.stqa.pfd.addressbook.UntitledTestCase" time="2.039"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 55371
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1647760398.305][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+мар. 20, 2022 5:13:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 20, 2022 5:13:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
+мар. 20, 2022 5:13:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 97
+]]></system-err>
+</testsuite>
