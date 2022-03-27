@@ -6,10 +6,10 @@ public class RazdelDeletionTest extends TestBase {
 
   @Test
   public void testRazdelDeletion() throws Exception {
-    app.gotoRazdelPage();
-    app.deleteSelectRazdel();
-    app.deleteRazdel();
-    app.gotoRazdelPage();
+    app.getNavigationHelper().gotoRazdelPage();
+    app.getRazdelHelper().deleteSelectRazdel();
+    app.getRazdelHelper().deleteRazdel();
+    app.getNavigationHelper().gotoRazdelPage();
   }
 
 }
