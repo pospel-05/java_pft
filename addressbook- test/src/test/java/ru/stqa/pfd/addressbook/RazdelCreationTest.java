@@ -9,7 +9,7 @@ public class RazdelCreationTest extends TestBase {
     gotoRazdelPage();
     initRazdel();
     fillRazdelForm(new RazdelData("4", "4", "4"));
-    submitChapter();
+    submitRazdel();
   }
 
 }

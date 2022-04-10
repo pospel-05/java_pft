@@ -21,7 +21,7 @@ public class TestBase {
       driver = new ChromeDriver();
       String baseUrl = "https://www.google.com/";
       WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-      driver.get("https://phonebook-app.com/go/demo-ru/www/00admin/index.php?r=partition%2Fcreate");
+      driver.get("https://phonebook-app.com/go/demo-ru/www/00admin/index.php?r=site%2Flogin");
       login("master", "master");
     }
 
@@ -34,9 +34,12 @@ public class TestBase {
       driver.findElement(By.id("loginform-password")).sendKeys(password);
       driver.findElement(By.name("login-button")).click();
     }
+    protected void gotoRazdelPage() {
+        driver.findElement(By.xpath("//*[@id=\"w3\"]/li[8]/a")).click();
+    }
 
-    protected void submitChapter() {
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
+    protected void initRazdel() {
+        driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/p/a")).click();
     }
 
     protected void fillRazdelForm(RazdelData groupData) {
@@ -51,13 +54,12 @@ public class TestBase {
       driver.findElement(By.id("partition-order")).sendKeys(groupData.namber());
     }
 
-    protected void initRazdel() {
-      driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/p/a")).click();
+    protected void submitRazdel() {
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
-    protected void gotoRazdelPage() {
-      driver.findElement(By.xpath("//*[@id=\"w4\"]/li[8]/a")).click();
-    }
+
+
 
     @AfterClass(alwaysRun = true)
     public void tearDown() throws Exception {
