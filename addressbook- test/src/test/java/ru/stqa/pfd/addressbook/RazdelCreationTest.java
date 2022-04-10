@@ -8,7 +8,7 @@ public class RazdelCreationTest extends TestBase {
   public void testRazdelCreation() {
     gotoRazdelPage();
     initRazdel();
-    fillRazdelForm(new GroupData("4", "4", "4"));
+    fillRazdelForm(new RazdelData("4", "4", "4"));
     submitChapter();
   }
 

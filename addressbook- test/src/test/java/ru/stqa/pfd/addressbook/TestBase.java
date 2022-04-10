@@ -39,7 +39,7 @@ public class TestBase {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
-    protected void fillRazdelForm(GroupData groupData) {
+    protected void fillRazdelForm(RazdelData groupData) {
       driver.findElement(By.id("partition-title")).click();
       driver.findElement(By.id("partition-title")).clear();
       driver.findElement(By.id("partition-title")).sendKeys(groupData.name());

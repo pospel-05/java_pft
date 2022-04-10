@@ -2,12 +2,12 @@ package ru.stqa.pfd.addressbook;
 
 import java.util.Objects;
 
-public final class GroupData {
+public final class RazdelData {
     private final String name;
     private final String label;
     private final String namber;
 
-    public GroupData(String name, String label, String namber) {
+    public RazdelData(String name, String label, String namber) {
         this.name = name;
         this.label = label;
         this.namber = namber;
@@ -29,7 +29,7 @@ public final class GroupData {
     public boolean equals(Object obj) {
         if (obj == this) return true;
         if (obj == null || obj.getClass() != this.getClass()) return false;
-        var that = (GroupData) obj;
+        var that = (RazdelData) obj;
         return Objects.equals(this.name, that.name) &&
                 Objects.equals(this.label, that.label) &&
                 Objects.equals(this.namber, that.namber);
